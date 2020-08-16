@@ -1,0 +1,177 @@
+.styled-checkbox {
+    position: absolute;
+    opacity: 100;
+}
+
+label+.styled-checkbox {
+    position: relative;
+    cursor: pointer;
+    padding: 0;
+    margin-left: 30px;
+}
+
+label+.styled-checkbox:before {
+    content: '';
+    margin-right: 10px;
+    display: inline-block;
+    vertical-align: text-top;
+    width: 20px;
+    height: 20px;
+    background: white;
+    border: 2px solid #b8b8b8;
+}
+
+label+.styled-checkbox:hover:before {
+    background: white;
+}
+
+label+.styled-checkbox:focus:before {
+    box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.12);
+}
+
+label+.styled-checkbox:checked:before {
+    background: #2196F3;
+}
+
+label+.styled-checkbox:disabled {
+    color: #b8b8b8;
+    cursor: auto;
+}
+
+label+.styled-checkbox:disabled:before {
+    box-shadow: none;
+    background: #ddd;
+}
+
+label+.styled-checkbox:checked:after {
+    content: '';
+    position: absolute;
+    left: 5px;
+    top: 9px;
+    background: white;
+    width: 2px;
+    height: 2px;
+    box-shadow: 2px 0 0 white, 4px 0 0 white, 4px -2px 0 white, 4px -4px 0 white, 4px -6px 0 white, 4px -8px 0 white;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.filter-box {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+    display: flex;
+    border-color: #2196f3;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(102, 175, 233, .6);
+}
+
+.filter_icon {
+    border-color: #cecece;
+}
+
+.input-group-addon.filter_icon button {
+    border: none;
+    background: transparent;
+    margin: 0px;
+    padding: 0px;
+}
+
+.no-padding {
+    padding: 0px !important;
+}
+
+.no-margin {
+    margin: 0px !important;
+}
+
+.pr-15 {
+    padding-right: 15px !important;
+}
+
+.col-sm-12.filter-box:after {
+    content: " ";
+    right: 12px;
+    position: absolute;
+    top: -10px;
+    border: 5px solid #d8000000;
+    display: block;
+    height: 0;
+    width: 0;
+    border-bottom-color: #cecece;
+}
+
+.manage-multi-invoice>i {
+    font-size: 15px !important;
+}
+
+.manage-multi-invoice:hover {
+    cursor: pointer;
+}
+
+.multi-invoice-dropbtn {
+    background-color: transparent;
+    color: #cecece;
+    font-size: 16px;
+    border: none;
+    padding:0px;
+}
+
+.multi-invoice-dropdown {
+    position: relative;
+    /* display: inline-block; */
+    display: none;
+}
+
+.multi-invoice-dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    left: -20px;
+}
+
+.multi-invoice-dropdown-content a {
+    color: #272727;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.multi-invoice-dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.multi-invoice-dropdown-content button {
+    background: transparent;
+    border:none;
+    color: #272727;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+}
+
+.multi-invoice-dropdown-content button:hover {
+    border: none;
+    background-color: #ddd;
+}
+
+.multi-invoice-dropdown:hover .multi-invoice-dropdown-content {
+    display: block;
+    transition: transform  2s;
+    transform: scale(1);
+}
+
+.multi-invoice-dropdown:hover .multi-invoice-dropbtn {
+    background-color: transparent;
+    color: #8a8a8a;
+}
+
+button > span{
+    margin-right: 5px;
+}
+.btn.btn-primary.btn-xs.print_all_btn{
+    width: 89.44px;
+}
